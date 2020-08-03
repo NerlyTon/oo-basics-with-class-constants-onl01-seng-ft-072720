@@ -6,9 +6,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-    brand_count = ()
-    brand_count = BRANDS.size
+    if !(BRANDS.include?(@brand))
+      BRANDS << @brand
+    end
   
   end
 
